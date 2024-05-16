@@ -6,8 +6,8 @@
 package paquete0;
 
 import java.util.ArrayList;
-import paquete1.Calificacion;
-import paquete1.Profesor;
+import paquete2.Calificacion;
+import paquete2.Profesor;
 
 /**
  *
