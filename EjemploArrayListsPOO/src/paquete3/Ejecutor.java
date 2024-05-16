@@ -15,7 +15,7 @@ public class Ejecutor {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        String marca;
+        String marca, marcaPc;
         double costo;
         ArrayList<Computador> computadoresTotales = new ArrayList<>();
         int numeroVentas;
@@ -27,7 +27,10 @@ public class Ejecutor {
         entrada.nextLine();
 
         for (int i = 0; i < numeroVentas; i++) {
+            System.out.println("Ingrese la marca del computador");
+            marcaPc = entrada.nextLine();
             // Memoria
+            System.out.println("Memoria");
             System.out.printf("Ingrese marca de la memoria %d\n", i + 1);
             marca = entrada.nextLine();
             System.out.printf("Ingrese costo de la memoria %d\n", i + 1);
@@ -35,6 +38,7 @@ public class Ejecutor {
             entrada.nextLine();
             Memoria m1 = new Memoria(marca, costo);
             // Procesador
+            System.out.println("Procesador");
             System.out.printf("Ingrese marca del procesador %d\n", i + 1);
             marca = entrada.nextLine();
             System.out.printf("Ingrese costo del procesador%d\n", i + 1);
@@ -42,14 +46,9 @@ public class Ejecutor {
             entrada.nextLine();
 
             Procesador cpu1 = new Procesador(marca, costo);
-            // con las variables nota y nombreEstudiante se procede
-            // a crear un objeto de tipo Calificacion
-            //
-            System.out.println("Ingrese la marca del computador");
-            marca = entrada.nextLine();
 
-            Computador pc1 = new Computador(marca, cpu1, m1);
-  
+            Computador pc1 = new Computador(marcaPc, cpu1, m1);
+
             pc1.calcularCostoComputador();
             computadoresTotales.add(pc1);
         }

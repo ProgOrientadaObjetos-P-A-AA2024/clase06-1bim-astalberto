@@ -9,23 +9,28 @@ package paquete3;
  * @author reroes
  */
 public class Memoria {
+
     private String marca;
     private double costo;
-    
-    public Memoria(String x,double n){
+
+    public Memoria(String x, double n) {
         marca = x;
         costo = n;
     }
-    public void establecerMarca(String x){
+
+    public void establecerMarca(String x) {
         marca = x;
     }
-    public void establecerCosto(double n){
+
+    public void establecerCosto(double n) {
         costo = n;
     }
-    public String obtenerMarca(){
+
+    public String obtenerMarca() {
         return marca;
     }
-    public double obtenerCosto(){
+
+    public double obtenerCosto() {
         return costo;
     }
 }
