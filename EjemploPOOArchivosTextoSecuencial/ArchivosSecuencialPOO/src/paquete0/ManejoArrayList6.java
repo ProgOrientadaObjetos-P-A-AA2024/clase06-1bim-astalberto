@@ -13,7 +13,7 @@ import paquete1.Profesor;
  *
  * @author reroes
  */
-public class ManejoArrayList3 {
+public class ManejoArrayList6 {
 
     public static void main(String[] args) {
 
@@ -36,10 +36,8 @@ public class ManejoArrayList3 {
         calificaciones.add(c3);
 
         for (int i = 0; i < calificaciones.size(); i++) {
-            System.out.printf("%s - %s - %.2f\n",
-                    calificaciones.get(i).obtenerProfesor().obtenerNombre(),
-                    calificaciones.get(i).obtenerNombreMateria(),
-                    calificaciones.get(i).obtenerNota());
+            System.out.printf("%s\n",
+                    calificaciones.get(i));
         }
 
     }

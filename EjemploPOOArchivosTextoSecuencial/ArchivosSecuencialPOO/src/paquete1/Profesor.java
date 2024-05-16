@@ -5,46 +5,37 @@
  */
 package paquete1;
 
-public class Profesor{
+public class Profesor {
+
     private String nombre;
     private String tipo;
-    
-    public Profesor(String n, String t){
+
+    public Profesor(String n, String t) {
         nombre = n;
         tipo = t;
     }
-    
-    public void establecerNombre(String n){
+
+    public void establecerNombre(String n) {
         nombre = n;
     }
-    
-    public void establecerTipo(String n){
+
+    public void establecerTipo(String n) {
         tipo = n;
     }
-    
-    public String obtenerNombre(){
+
+    public String obtenerNombre() {
         return nombre;
     }
-    
-    public String obtenerTipo(){
+
+    public String obtenerTipo() {
         return tipo;
     }
-    
-    public String toString(){
-        return String.format("%s - %s", nombre, tipo);
-        
-        // return String.format("%s - %s", obtenerNombre(), 
-        //         obtenerTipo());
-        
-        // return String.format("%s - %s", obtenerNombre(), tipo);
+
+    @Override
+    public String toString() {
+        String cadena = "";
+        cadena = String.format("%s - %s", obtenerNombre(),
+                obtenerTipo());
+        return cadena;
     }
 }
-
-
-
-
-
-
-
-
-

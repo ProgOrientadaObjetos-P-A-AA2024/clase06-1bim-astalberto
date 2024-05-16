@@ -12,10 +12,9 @@ import paquete1.Profesor;
  *
  * @author reroes
  */
-public class ManejoArrayList2 {
+public class ManejoArrayList5 {
 
     public static void main(String[] args) {
-
         Profesor prof1 = new Profesor("Joseph Jimenez", "facturado");
         Profesor prof2 = new Profesor("David Jones", "nombramiento");
 
@@ -25,40 +24,32 @@ public class ManejoArrayList2 {
         profesores[1] = prof2;
 
         for (int i = 0; i < profesores.length; i++) {
-            //    System.out.printf("%s - %s\n", profesores[i].obtenerNombre(),
-            //            profesores[i].obtenerTipo());
+            Profesor p1 = profesores[i];
+            System.out.printf("%s\n", p1);
         }
 
         System.out.println("-----------------------------");
 
         // ArrayList
         ArrayList<Profesor> profesores2 = new ArrayList<>();
-        profesores2.add(prof1); // 0
-        profesores2.add(prof2); // 1
+        profesores2.add(prof1);
+        profesores2.add(prof2);
 
-        // System.out.println(profesores2.get(1).obtenerTipo());
-        Profesor temporal = profesores2.get(0);
-        System.out.println(temporal.obtenerTipo());
-
-        /*
         for (int i = 0; i < profesores2.size(); i++) {
-            System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
-                    profesores2.get(i).obtenerTipo());
+            Profesor p1 = profesores2.get(i);
+            System.out.printf("%s\n", p1);
         }
-         */
+
         System.out.println("-----------------------------");
 
         Profesor prof3 = new Profesor("Melissa Gilbert", "contratado");
-        Profesor prof4 = new Profesor("Melissa J", "desconocido");
-        Profesor prof5 = new Profesor("Melissa M", "contratado");
-
         profesores2.add(prof3);
-        profesores2.add(prof4);
-        profesores2.add(prof5);
 
         for (int i = 0; i < profesores2.size(); i++) {
-            System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
-                    profesores2.get(i).obtenerTipo());
+            System.out.printf("%s\n", profesores2.get(i));
+            // profesores2 es un arreglo de tipo Profesor que al llamar al metodo
+            // .get nos devuelve un objeto de tipo Profesor que esta en x posicion
+            // del arreglo
         }
     }
 }
