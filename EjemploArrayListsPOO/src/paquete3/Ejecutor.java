@@ -27,19 +27,19 @@ public class Ejecutor {
         entrada.nextLine();
 
         for (int i = 0; i < numeroVentas; i++) {
-            System.out.println("Ingrese la marca del computador");
+            System.out.printf("Ingrese la marca del computador %d\n", i + 1);
             marcaPc = entrada.nextLine();
             // Memoria
             System.out.println("Memoria");
-            System.out.printf("Ingrese marca de la memoria %d\n", i + 1);
+            System.out.printf("Ingrese marca de la memoria\n");
             marca = entrada.nextLine();
-            System.out.printf("Ingrese costo de la memoria %d\n", i + 1);
+            System.out.printf("Ingrese costo de la memoria\n");
             costo = entrada.nextDouble();
             entrada.nextLine();
             Memoria m1 = new Memoria(marca, costo);
             // Procesador
-            System.out.println("Procesador");
-            System.out.printf("Ingrese marca del procesador %d\n", i + 1);
+            System.out.printf("Procesador");
+            System.out.printf("Ingrese marca del procesador");
             marca = entrada.nextLine();
             System.out.printf("Ingrese costo del procesador%d\n", i + 1);
             costo = entrada.nextDouble();
