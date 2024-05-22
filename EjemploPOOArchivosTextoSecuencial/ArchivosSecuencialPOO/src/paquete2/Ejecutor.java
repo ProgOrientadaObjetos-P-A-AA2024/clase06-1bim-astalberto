@@ -28,7 +28,7 @@ public class Ejecutor {
         archivo.establecerRegistro(profesor1);
         // establecer en el archivo el atributo del registro
         // Obtiene los valores de un archivo de texto.txt, y lo concatena en un
-        // list para poder trabajar con los datos obtenidos
+        // list para poder trabajar con los datos obtenidos 
         archivo.establecerSalida();
         
         // establecer el valor del atributo registro

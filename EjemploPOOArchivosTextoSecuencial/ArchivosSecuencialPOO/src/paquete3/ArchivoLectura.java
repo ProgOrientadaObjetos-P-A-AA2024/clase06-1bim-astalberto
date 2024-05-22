@@ -77,7 +77,10 @@ public class ArchivoLectura {
                 double nota = Double.parseDouble(linea_partes.
                         get(1).replace(",", "."));
                 String profesor = linea_partes.get(2);
+                // = \\ sirve para escribir/formatear cierto tipo de 
+                // caracteres especiales 
 
+                
                 ArrayList<String> cadenaProfesor = new ArrayList<>(
                         Arrays.asList(profesor.split("\\|")));
                 // ["Tara Hernandez", "contratado"]
